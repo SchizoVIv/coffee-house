@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee House</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" type="image/png" href="./image/coffee-cup.svg">
+    <script defer src="./js/index.js"></script>
+    <script defer src="./js/slider.js"></script>
+    <script defer src="./js/sliderMobile.js"></script>
+</head>
+<body id="body" class="page">
+    <header class="header">
+        <a href="https://rolling-scopes-school.github.io/schizoviv-JSFE2023Q4/coffee-house/"><img class="header__logo" src="./image/logo.svg" alt="logo"></a>
+        <nav class="header__navigation-block">
+            <ul class="header__navigation-list" id="cards">
+                <li class="header__navigation-item" id="card">
+                    <a class="header__navigate-link header__navigate-link_1 link-line no-hover" href="#favorite">Favorite coffee</a>
+                </li>
+                <li class="header__navigation-item">
+                    <a class="header__navigate-link header__navigate-link_2 link-line no-hover" href="#about">About</a>
+                </li>
+                <li class="header__navigation-item">
+                    <a class="header__navigate-link header__navigate-link_3 link-line no-hover" href="#app">Mobile app</a>
+                </li>
+                <li class="header__navigation-item">
+                    <a class="header__navigate-link header__navigate-link_4 link-line no-hover" href="#contact">Contact us</a>
+                </li>  
+                <li class="header__navigation-item">
+                    <a class="header__navigate-link header__navigate-link_5 link-line no-hover" href="https://rolling-scopes-school.github.io/schizoviv-JSFE2023Q4/coffee-house/menu/">
+                        <span class="header__navigate-text_5">Menu</span>
+                        <img class="header__img-button-menu" src="./image/coffee-cup-2.svg" alt="cup" ></a>
+                </li>                                      
+            </ul>
+        </nav>
+        <div class="burger" id="burger">
+            <span class="burger__line burger__line_nomber_1"></span>
+            <span class="burger__line burger__line_nomber_2"></span>
+          </div>
+        <a class="header__menu-button link-line hidden no-hover" href="https://rolling-scopes-school.github.io/schizoviv-JSFE2023Q4/coffee-house/menu/">Menu<img class="enjoy__img-button-menu" src="./image/coffee-cup.svg" alt="cup" ></a>
+    </header>
+    <main class="main">
+        <section class="enjoy">
+            <div class="enjoy__link">
+                <video autoplay loop muted class="enjoy__mp4" id="bgvideo">
+                    <source src="./image/video(2160p).mp4" type="video/mp4"></source>
+                </video>
+                <div class="enjoy__backgraund">
+                    <h1 class="enjoy__title"><span class="enjoy__title-word">Enjoy</span>  premium coffee at our charming cafe</h1>
+                    <h2 class="enjoy__subtitle">With its inviting atmosphere and delicious coffee options, the Coffee House Resource is a popular destination for coffee lovers and those seeking a warm and inviting space to enjoy their favorite beverage.</h2>
+                    <a class="enjoy__button-menu no-hover" href="https://rolling-scopes-school.github.io/schizoviv-JSFE2023Q4/coffee-house/menu/">
+                        <span>Menu</span>
+                        <img class="enjoy__img-button-menu" src="./image/coffee-cup.svg" alt="cup" >
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section id="favorite" class="favourites-coffee">
+            <h2 class="favourites-coffee__title">Choose your <span class="favourites-coffee__title-word">favorite</span> coffee</h2>
+            <div class="scroll">
+                <button class="scroll__arrow scroll__arrow_left"></button>
+                <div class="scroll__conteiner">
+                    <ul class="scroll__list">
+                        <li class="scroll__item activeImage">
+                            <img class="scroll__img" src="./image/coffee-slider-1.png" alt="S’mores Frappuccino">
+                            <h3 class="scroll__name-coffee">S’mores Frappuccino</h3>
+                            <p class="scroll__about-coffee">This new drink takes an espresso and mixes it with brown sugar and cinnamon before being topped with oat milk.</p>
+                            <p class="scroll__cost-coffee">$5.50</p>
+                        </li>
+                        <li class="scroll__item ">
+                            <img class="scroll__img" src="./image/coffee-slider-2.png" alt="S’mores Frappuccino">
+                            <h3 class="scroll__name-coffee">Caramel Macchiato</h3>
+                            <p class="scroll__about-coffee">Fragrant and unique classic espresso with rich caramel-peanut syrup, with cream under whipped thick foam.</p>
+                            <p class="scroll__cost-coffee">$5.00</p>
+                        </li>
+                        <li class="scroll__item ">
+                            <img class="scroll__img" src="./image/coffee-slider-3.png" alt="S’mores Frappuccino">
+                            <h3 class="scroll__name-coffee">Ice coffee</h3>
+                            <p class="scroll__about-coffee">A popular summer drink that tones and invigorates. Prepared from coffee, milk and ice.</p>
+                            <p class="scroll__cost-coffee">$4.50</p>
+                        </li>
+                    </ul>
+                    <!-- <div class="scroll__boxes">
+                        <div class="scroll__box scroll__box_1"></div>
+                        <div class="scroll__box scroll__box_2"></div>
+                        <div class="scroll__box scroll__box_3"></div>
+                    </div> -->
+                </div>
+                <button class="scroll__arrow scroll__arrow_right no-hover"></button>
+            </div>
+            <div class="favourites-coffee__list-page">
+                <div class="favourites-coffee__item-page">
+                    <div class="favourites-coffee__item-slider "></div>
+                </div>
+                <div class="favourites-coffee__item-page">
+                    <div class="favourites-coffee__item-slider "></div>
+                </div>
+                <div class="favourites-coffee__item-page">
+                    <div class="favourites-coffee__item-slider "></div>
+                </div>
+            </div>
+        </section>
+        <section id="about" class="about">
+            <h2 class="about__title">Resource is <span class="about__title-word">the perfect and cozy place</span> where you can enjoy a variety of hot beverages, relax, catch up with friends, or get some work done.</h2>
+            <div class="about__pictures">
+                <div class="about__image-item about__image_1">
+                    <img class="about__image about__image_1 image-zoom no-hover" src="./image/about-1.jpg" alt="">
+                </div>
+                <div class="about__image-item about__image_2">
+                    <img class="about__image about__image_1 image-zoom no-hover" src="./image/about-3.jpg" alt="">
+                </div>
+                <div class="about__image-item about__image_3">
+                    <img class="about__image about__image_1 image-zoom no-hover" src="./image/about-2.jpg" alt="">
+                </div>
+                <div class="about__image-item about__image_4">
+                    <img class="about__image about__image_1 image-zoom no-hover" src="./image/about-4.jpg" alt="">
+                </div>
+            </div>
+        </section>
+        <section id="app" class="mobile-app">
+            <div class="mobile-app__block-text">
+                <h2 class="mobile-app__title"><span class="mobile-app__title-word">Download</span> our apps to start ordering</h2>
+                <p class="mobile-app__subtitle">Download the Resource app today and experience the comfort of ordering your favorite coffee from wherever you are</p>
+                <div class="mobile-app__block-links">
+                    <a class="mobile-app__link mobile-app__link-app no-hover" target="_blank" href="https://github.com/rolling-scopes-school/tasks/blob/master/tasks/coffee-house/coffee-house-week1.md">
+                        <div class="mobile-app__ikon mobile-app__ikon_appl"></div>
+                        <div class="mobile-app__text"><p class="mobile-app__available">Available on the</p>
+                            <p class="mobile-app__mobil-platform">App Store</p></div>
+                    </a>
+                    <a class="mobile-app__link mobile-app__link-google no-hover" target="_blank" href="https://github.com/rolling-scopes-school/tasks/blob/master/tasks/coffee-house/coffee-house-week1.md">
+                        <div class="mobile-app__ikon mobile-app__ikon_google"></div>
+                        <div class="mobile-app__text">
+                            <p class="mobile-app__available">Available on</p>
+                            <p class="mobile-app__mobil-platform">Google Play</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <img class="mobile-app__img" src="./image/mobile-screens-2.png" alt="mobile">
+        </section>
+    </main>
+    <footer id="contact" class="footer">
+        <div class="conteiner">
+            <div>
+                <h2 class="footer__title">Sip, Savor, Smile. <span class="footer__title-word">It’s coffee time!</span></h2>
+                <ul class="footer__links-social-list">
+                    <li class="footer__links-social-item">
+                        <a class="footer__link footer__link-twiter no-hover" target="_blank" href="https://ru.wikipedia.org/wiki/%D0%A2%D0%B2%D0%B8%D1%82%D1%82%D0%B5%D1%80">
+                            <div class="footer__link-img footer__link-img_twit"></div>
+                        </a>
+                    </li>
+                    <li class="footer__links-social-item">
+                        <a class="footer__link footer__link-inst no-hover" target="_blank" href="https://www.instagram.com/"><div class="footer__link-img footer__link-img_inst"> 
+                        </div></a>
+                    </li>
+                    <li class="footer__links-social-item">
+                        <a class="footer__link footer__link-fac no-hover" target="_blank" href="https://ru-ru.facebook.com/">
+                            <div class="footer__link-img footer__link-img_fac"> 
+                            </div>
+                            </a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="footer__subtitle">Contact us</h3>
+                <div class="footer__list">
+                    <a class="footer__item link-line-footer no-hover" target="_blank" href="https://maps.app.goo.gl/TmE5WWrE5fT5h56Q7">
+                        <img class="footer__item-img" src="./image/pin-alt.svg" alt="">
+                        <span class="footer__item-text">8558 Green Rd., LA</span>
+                    </a>
+                    <a class="footer__item link-line-footer no-hover" href="tel:+16035550123">
+                        <img class="footer__item-img" src="./image/phone.svg" alt="">
+                        <span class="footer__item-text">+1 (603) 555-0123</span>
+                    </a>
+                    <div class="footer__item">
+                        <img class="footer__item-img" src="./image/clock.svg" alt="">
+                        <span class="footer__item-text">Mon-Sat: 9:00 AM – 23:00 PM</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

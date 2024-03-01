@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee House menu</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" type="image/png" href="../image/coffee-cup.svg">
+    <script defer src="../js/index.js"></script>
+    <script defer src="../js/cardList.js"></script>
+    <script defer src="../js/menu.js"></script>
+    <script defer src="../js/refresh.js"></script>
+    <script defer src="../js/Popap.js"></script>
+</head>
+<body class="page">
+    <header class="header">
+        <a href="https://rolling-scopes-school.github.io/schizoviv-JSFE2023Q4/coffee-house/"><img class="header__logo" src="../image/logo.svg" alt="logo"></a>
+        <nav class="header__navigation-block">
+            <ul class="header__navigation-list">
+                <li class="header__navigation-item">
+                    <a class="header__navigate-link header__navigate-link_1 link-line no-hover" href="#favorite">Favorite coffee</a>
+                </li>
+                <li class="header__navigation-item">
+                    <a class="header__navigate-link header__navigate-link_2 link-line no-hover" href="#about">About</a>
+                </li>
+                <li class="header__navigation-item">
+                    <a class="header__navigate-link header__navigate-link_3 link-line no-hover" href="#app">Mobile app</a>
+                </li>
+                <li class="header__navigation-item">
+                    <a class="header__navigate-link header__navigate-link_4 link-line no-hover" href="#contact">Contact us</a>
+                </li>  
+                <li class="header__navigation-item">
+                    <a class="header__navigate-link header__navigate-link_5 link-line no-hover" href="https://rolling-scopes-school.github.io/schizoviv-JSFE2023Q4/coffee-house/menu/">
+                        <span class="header__navigate-text_5">Menu</span>
+                        <img class="header__img-button-menu" src="../image/coffee-cup-2.svg" alt="cup" ></a>
+                </li>                                      
+            </ul>
+        </nav>
+        <div class="burger" id="burger">
+            <span class="burger__line burger__line_nomber_1"></span>
+            <span class="burger__line burger__line_nomber_2"></span>
+        </div>
+        <a class="header__menu-button header__menu-button_disabled header__menu-button-line hidden" href="#">Menu</a>
+    </header>
+    <main class="main">
+        <section class="popup popup_hidden">
+        
+            <div class="popup__conteiner">
+                <div class="popup__box-img">
+                    <img class="popup__img" id="popup-img" src="../image/coffee-1.jpg" alt="coffee">
+                </div>
+                <!-- <img class="popup__img" src="../image/coffee-1.jpg" alt="coffee"> -->
+                <div class="popup__box-text">
+                    <div>
+                        <h2 class="popup__title">Irish coffee</h2>
+                        <p class="popup__subtitle">Fragrant black coffee with Jameson Irish whiskey and whipped milk</p>
+                    </div>
+                    <div>
+                        <p class="popup__lable">Size</p>
+                        <div class="popup__list popup__list_size">
+                            <input 
+                                class="popup__item popup__item-style  popup__item_size popup__item_s popup-input"
+                                type="radio"
+                                id="size-s"
+                                name="size">
+                                <label
+                                    id="label-s"
+                                    for="size-s"
+                                    class="popup__item popup__item-style popup__item_s">
+                                        <div class="popup__letter popup__letter_s circle_active">S</div>200 ml
+                                </label>
+                            </input>
+                            <input
+                                class="popup__item popup__item-style  popup__item_size popup__item_m popup-input"
+                                id="size-m"
+                                name="size"
+                                type="radio">
+                                <label
+                                    id="label-m"
+                                    for="size-m"
+                                    class="popup__item popup__item-style popup__item_m">
+                                        <div class="popup__letter popup__letter_m">M</div>300 ml
+                                </label>
+                            </input>
+                            <input 
+                                class="popup__item popup__item-style popup__item_size  popup__item_l popup-input"
+                                id="size-l"
+                                name="size"
+                                type="radio">
+                                    <label
+                                        id="label-l"
+                                        for="size-l"
+                                        class="popup__item popup__item-style popup__item_s">
+                                            <div class="popup__letter popup__letter_l">L</div>400 ml
+                                    </label>
+                            </input>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="popup__lable">Additives</p>
+                        <div class="popup__list popup__list_add">
+                            <div class="popup__item-style" id="popup-style-1">
+                                <div class="popup__letter popup__letter_1">1
+
+                                </div>
+                                <input 
+                                    class="popup__item popup__item-style popup__item_add_1 popup-input"
+                                    name="top"
+                                    id="top-1"
+                                    type="checkbox">
+                                        <label
+                                            class="popup__item popup__item_1" 
+                                            for="top-1">
+                                            Sugar
+                                        </label>
+                                </input>
+                            </div>
+                            <div class="popup__item-style"
+                                id="popup-style-2">
+                                <div class="popup__letter popup__letter_2">2</div>
+                                <input 
+                                    class="popup__item popup__item-style popup__item_add_2 popup-input"
+                                    name="top"
+                                    id="top-2"
+                                    type="checkbox">
+                                    
+                                        <label 
+                                        class="popup__item popup__item_2"
+                                        for="top-2">
+                                            <div class="popup__letter">2</div>Cinnamon
+                                        </label>
+                                </input>
+                            </div>
+                            <div class="popup__item-style"
+                                id="popup-style-3">
+                                <div class="popup__letter popup__letter_3">3</div>
+                            <input 
+                                class="popup__item popup__item-style popup__item_add_3 popup-input"
+                                name="top"
+                                id="top-3"
+                                type="checkbox"
+                                >
+                                    <label
+                                    class="popup__item popup__item_3"
+                                    for="top-3">
+                                    Syrup
+                                    </label>
+                                </input>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popup__box-total">
+                        <p class="popup__total">Total:</p>
+                        <span class="popup__money">$7.00</span>
+                    </div>
+                    <div class="popup__warring-box">
+                        <span class="popup__warring-icon">i</span>
+                        <p class="popup__warring">The cost is not final. Download our mobile app to see the final price and place your order. Earn loyalty points and enjoy your favorite coffee with up to 20% discount.</p>
+                    </div>
+                    <button class="popup__button-close">Close</button>
+                </div>
+            </div>
+        </section>
+        <section class="menu">
+            <h1 class="menu__title">Behind each of our cups hides an <span class="menu__title-word">amazing surprise</span></h1>
+            <div class="menu__conteiner-buttons">
+                <button class="menu__button menu__button-coffee menu__button-active">
+                    <div class="menu__button-circle menu__button-circle_coffee circle_active"></div>
+                    Coffee
+                </button>
+                <button class="menu__button menu__button-tea no-hover">
+                    <div class="menu__button-circle menu__button-circle_tea"></div>
+                    Tea
+                </button>
+                <button class="menu__button menu__button-desert no-hover">
+                    <div class="menu__button-circle menu__button-circle_cake"></div>
+                    Dessert
+                </button>
+            </div>
+            <ul class="menu__conteiner-items" id="cards-list">
+            </ul>
+            <template id="cardTemplate">
+                <li class="menu__item"   action="">
+                    <div class="menu__item-block-img">
+                        <img class="menu__item-img" src="#" alt="">
+                    </div>
+                    <div class="menu__item-text">
+                        <div>
+                            <h3 class="menu__item-title"></h3>
+                            <p class="menu__item-about"></p>
+                        </div>
+                        <p class="menu__item-cost">7</p>
+                    </div>
+                </li>
+            </template>
+            <button class="menu__refresh no-hover"></button>
+        </section>
+    </main>
+    <footer id="contaсt-us" class="footer">
+        <div class="conteiner">
+            <div>
+                <h2 class="footer__title">Sip, Savor, Smile. <span class="footer__title-word">It’s coffee time!</span></h2>
+                <ul class="footer__links-social-list">
+                    <li class="footer__links-social-item">
+                        <a class="footer__link footer__link-twiter no-hover" target="_blank" href="https://ru.wikipedia.org/wiki/%D0%A2%D0%B2%D0%B8%D1%82%D1%82%D0%B5%D1%80">
+                            <div class="footer__link-img footer__link-img_twit"></div>
+                        </a>
+                    </li>
+                    <li class="footer__links-social-item">
+                        <a class="footer__link footer__link-inst no-hover" target="_blank" href="https://www.instagram.com/"><div class="footer__link-img footer__link-img_inst"> 
+                        </div></a>
+                    </li>
+                    <li class="footer__links-social-item">
+                        <a class="footer__link footer__link-fac no-hover" target="_blank" href="https://ru-ru.facebook.com/">
+                            <div class="footer__link-img footer__link-img_fac"> 
+                            </div>
+                            </a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="footer__subtitle">Contact us</h3>
+                <div class="footer__list">
+                    <a class="footer__item link-line-footer no-hover" target="_blank" href="https://maps.app.goo.gl/TmE5WWrE5fT5h56Q7">
+                        <img class="footer__item-img" src="../image/pin-alt.svg" alt="">
+                        <span class="footer__item-text">8558 Green Rd., LA</span>
+                    </a>
+                    <a class="footer__item link-line-footer no-hover" href="tel:+16035550123">
+                        <img class="footer__item-img" src="../image/phone.svg" alt="">
+                        <span class="footer__item-text">+1 (603) 555-0123</span>
+                    </a>
+                    <div class="footer__item">
+                        <img class="footer__item-img" src="../image/clock.svg" alt="">
+                        <span class="footer__item-text">Mon-Sat: 9:00 AM – 23:00 PM</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
